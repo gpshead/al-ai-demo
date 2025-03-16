@@ -1,0 +1,41 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 300
+%%Title: Circle and Arc Test
+%%Creator: Claude
+%%EndComments
+
+% Draw a filled circle
+newpath
+150 150 50 0 360 arc
+closepath
+0.7 setgray
+fill
+
+% Draw an arc
+newpath
+150 150 80 30 330 arc
+0.0 setgray
+3 setlinewidth
+stroke
+
+% Draw a circle outline
+newpath
+150 150 100 0 360 arc
+closepath
+0.5 setgray
+2 setlinewidth
+stroke
+
+% Draw a quarter circle arc
+newpath
+50 50 40 0 90 arc
+0.3 setgray
+4 setlinewidth
+stroke
+
+% Draw a half circle arc
+newpath
+250 50 40 180 360 arc
+0.0 setgray
+2 setlinewidth
+stroke

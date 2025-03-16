@@ -1,0 +1,67 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 300
+%%Title: Command Test
+%%Creator: Claude
+%%EndComments
+
+% Test basic move and line commands
+newpath
+50 50 moveto
+100 50 lineto
+100 100 lineto
+50 100 lineto
+closepath
+0.0 setgray
+stroke
+
+% Test rmoveto and rlineto
+newpath
+150 50 moveto
+50 0 rlineto
+0 50 rlineto
+-50 0 rlineto
+closepath
+0.3 setgray
+fill
+
+% Test setlinewidth
+newpath
+50 150 moveto
+100 150 lineto
+5 setlinewidth
+0.0 setgray
+stroke
+
+% Test relative positioning
+newpath
+150 150 moveto
+30 0 rlineto
+0 30 rlineto
+30 0 rlineto
+0 30 rlineto
+-60 0 rlineto
+closepath
+0.5 setgray
+fill
+
+% Test arc command
+newpath
+250 250 30 0 360 arc
+closepath
+0.7 setgray
+fill
+
+% Test gsave/grestore
+newpath
+250 150 moveto
+0 30 rlineto
+30 0 rlineto
+0 -30 rlineto
+closepath
+gsave
+0.2 setgray
+fill
+grestore
+2 setlinewidth
+0.0 setgray
+stroke

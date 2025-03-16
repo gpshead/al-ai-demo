@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# extras I don't need in the repo, people can fetch/generate them on their own:
+EPSF-html
+PostScript*
+rfc2083.txt

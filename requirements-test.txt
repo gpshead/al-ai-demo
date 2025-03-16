@@ -1,0 +1,4 @@
+pytest>=7.0.0
+pillow>=9.0.0
+cairosvg>=2.5.0
+ghostscript>=0.7.0
