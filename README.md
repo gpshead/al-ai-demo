@@ -138,7 +138,7 @@ The prompts I gave the `claude` CLI, in sequence, were:
 * "do our unittests check for different pixel values in relevant places in the final png image?",
    * _Another hint as the changes it made still hadn't actually made good PNGs despite potentially fixing one issue Claude found._
 * "we don't want to allow use of third party libraries in our actual utility, only in the tests.  was pillow compressing its png files?  our code should not (for simplicity).  i've added a PNG spec in `rfc2083.txt` if you want it.",
-   * _Claude was asking for permission to add an alternate codepath using Pillow in the main utility for its debugging. I decided to be a stick in the mud on this point for the challenge._
+   * _Claude was asking for permission to add an alternate codepath using Pillow in the main utility for its debugging. I decided to be a stick in the mud on this point for the challenge but I did throw Claude a bone by offering up the RFC which it happily looked things up in._
 * "great.  if you use the `zlib` library from the standard library, could you add png compression support?",
 * "/cost ",
    * \
