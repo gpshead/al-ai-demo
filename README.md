@@ -121,6 +121,7 @@ The prompts I gave the `claude` CLI, in sequence, were:
 * "i've made a simpler text only version of that doc, look in the `EPSF-html` directory.",
    * _I ran the above pdf through pdftohtml (not installed on the machine I was running `claude` on -- Or I likely could've just told Claude to use the tool to make the desired low token count text version of the spec)_
 * "lets keep it simple and skip antialiasing and color support. for the PNG we can skip compression (use type 0). look at the `PostScript Tutorial.html` file for basic postscript understanding.",
+   * _I saved and gave it a copy of https://paulbourke.net/dataformats/postscript/ for it to use if desired._
 * "sounds great, lets implement that.",
 * "For test purposes to validate our work, lets allow the use of third party libraries in test code. Can you write a unittest that uses relevant libraries or external tools to check the test data inputs and outputs?",
 * "Lets create a local virtual environment (venv) to install requirements within to execute these.",
@@ -128,7 +129,6 @@ The prompts I gave the `claude` CLI, in sequence, were:
    * \
 ```
   ⎿  Total cost:            $1.75
-     Total duration (API):  7m 38.7s
      Total code changes:    1191 lines added, 11 lines removed
 ```
 * "run test_eps_to_png and debug what's going on",
@@ -144,7 +144,6 @@ The prompts I gave the `claude` CLI, in sequence, were:
    * \
 ```
   ⎿  Total cost:            $5.97
-     Total duration (API):  19m 7.3s
      Total code changes:    1637 lines added, 251 lines removed
 ```
 
@@ -161,7 +160,7 @@ As usual, the bulk of development time|cost is final bit to get things working a
 
 ## Why didn't I include the full Claude Code console log or a terminal screen capture video
 
-Who's got time for that? (read: _someone else_ surely does) - It is interesting. But I think the most interesting thing you can do is to try this type of exercise for yourself.
+Who's got time for that? (read: _someone else_ surely does) - It is interesting. But I think the most interesting thing you can do is to try this type of exercise for yourself. I realize raw list of prompts without the conversational replies from the model inbetween reads weird.
 
 ## Interesting tips for Claude Code CLI users
 
