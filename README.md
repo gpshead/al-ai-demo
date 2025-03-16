@@ -88,8 +88,8 @@ Al Sweigart tried to troll people into doing this by offering a "Prove me wrong"
 
 _"""AI is completely unable to generate a Python function that converts a .eps file to a .png file without using a third-party package. It can't write the code to do it directly even though both formats are well-known. This is a straightforward task with fairly well-specified requirements, but AI is completely unable to do it. Prove me wrong."""_
 
-Others have already covered how that statement isn't correct in numerous ways.  But ignoring all of that, it serves as an interesting little project demo of readily available capabilities.
-in this p
+Others have already covered how that statement isn't correct in numerous ways.  But ignoring all of that, it serves as an interesting little project demo of readily available AI capabilities in March 2025.
+
 The response from `claude` CLI myself upon my first prompt (see the section below) basically agrees with people commenting on this as problem:
 
 ```
@@ -104,7 +104,7 @@ The response from `claude` CLI myself upon my first prompt (see the section belo
    consider allowing just one library like Pillow, or shall I research the raw file formats?
 ```
 
-That's claude speak for "WTF! Are you *really* gonna make me do this when the tool you need is right there?" AKA the "what am I? A farmer?" meme.
+That's claude speak for "WTF! Are you *really* gonna make me do this when the tool you need is right there?" AKA the "what am I? a farmer?" meme.
 
 I will note that it did not seem to realize while composing that reponse that the compression algorithms aren't actually required and that the zlib module in the standard library is not third party and provides them. I had it use that later and it nailed it.
 
@@ -158,6 +158,10 @@ As usual, the bulk of development time|cost is final bit to get things working a
 4. I have not code reviewed anything generated here beyond having skimmed it as it was generated and thinking _"neat! this is along the lines of what I was expecting - I am okay with executing it"_.
 5. Not specifying the interface or things like how to handle PNG resolutions was intentional. I wanted to see what it came up with. EPS as generally vector and PNG as bitmap it appears to have made a choice that greatly simplified its implementation. If we wanted dynamic PNG output sizes we'd need to ask for that... Good example of follow on work along with things like antialiasing and color support.
 6. The most useful models for serious work today cost real $money.
+
+## Why didn't I include the full Claude Code console log or a terminal screen capture video
+
+Who's got time for that? (read: _someone else_ surely does) - It is interesting. But I think the most interesting thing you can do is to try this type of exercise for yourself.
 
 ## Interesting tips for Claude Code CLI users
 
